@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+  }
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    animation-name: animatetask;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+
+}
+
+.loader{
+    background-color: rgb(11, 58, 104);
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 300px auto;
+    border-radius: 50%;
+    border: 8px solid rgb(0, 0, 0);
+}
+
+@keyframes animatetask{
+    0%{
+        transform: translateX(0);
+    }
+
+    25%{
+        transform: translate(50vw, 0);
+        border-radius: 50%;
+        background-color: aquamarine;
+    }
+
+    50%{
+
+        transform: translate(50vw, 50vh) rotate(90deg);
+        border-radius: 0;
+        background-color: blue;
+    }
+
+    75%{
+        transform: translate(0, 50vh) rotate(90deg);
+        border-radius: 50%;
+        background-color: red;
+    }
+    100%{
+        transform: translate(0, 0);
+        border-radius: 50%;
+        background-color: darkgreen;
+    }
+}
