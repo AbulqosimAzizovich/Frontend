@@ -1,7 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: "Lato", sans-serif;
   }
 
@@ -10,15 +18,25 @@
     height: 200px;
     background-color: brown;
     margin: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     color: #fff;
-    animation-name: animatetask;
-    animation-duration: 4s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
+    -webkit-animation-name: animatetask;
+            animation-name: animatetask;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 
 }
 
@@ -32,31 +50,73 @@
     border: 8px solid rgb(0, 0, 0);
 }
 
-@keyframes animatetask{
+@-webkit-keyframes animatetask{
     0%{
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
     }
 
     25%{
-        transform: translate(50vw, 0);
+        -webkit-transform: translate(50vw, 0);
+                transform: translate(50vw, 0);
         border-radius: 50%;
         background-color: aquamarine;
     }
 
     50%{
 
-        transform: translate(50vw, 50vh) rotate(90deg);
+        -webkit-transform: translate(50vw, 50vh) rotate(90deg);
+
+                transform: translate(50vw, 50vh) rotate(90deg);
         border-radius: 0;
         background-color: blue;
     }
 
     75%{
-        transform: translate(0, 50vh) rotate(90deg);
+        -webkit-transform: translate(0, 50vh) rotate(90deg);
+                transform: translate(0, 50vh) rotate(90deg);
         border-radius: 50%;
         background-color: red;
     }
     100%{
-        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+        border-radius: 50%;
+        background-color: darkgreen;
+    }
+}
+
+@keyframes animatetask{
+    0%{
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+
+    25%{
+        -webkit-transform: translate(50vw, 0);
+                transform: translate(50vw, 0);
+        border-radius: 50%;
+        background-color: aquamarine;
+    }
+
+    50%{
+
+        -webkit-transform: translate(50vw, 50vh) rotate(90deg);
+
+                transform: translate(50vw, 50vh) rotate(90deg);
+        border-radius: 0;
+        background-color: blue;
+    }
+
+    75%{
+        -webkit-transform: translate(0, 50vh) rotate(90deg);
+                transform: translate(0, 50vh) rotate(90deg);
+        border-radius: 50%;
+        background-color: red;
+    }
+    100%{
+        -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
         border-radius: 50%;
         background-color: darkgreen;
     }
