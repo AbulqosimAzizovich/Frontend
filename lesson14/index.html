@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magistr 2023</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize CSS -->
+    <!-- box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+
+
+    <div class="modal-window" id="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p>Kirish yoki ro'yhatdan o'tish</p>
+          <i id="close" class="bx bx-x"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- header -->
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <a href="#">
+            <img src="../lesson14/Images/Logo.svg" alt="logo" class="nav__logo" />
+          </a>
+
+          <ul class="nav__list">
+            <li class="nav__list--item">
+              <a href="#" class="nav__list--item-link">Asosiy</a>
+            </li>
+            <li class="nav__list--item">
+              <a href="#" class="nav__list--item-link">Imtiyozlar</a>
+            </li>
+            <li class="nav__list--item">
+              <a href="#" class="nav__list--item-link">Yangiliklar</a>
+            </li>
+            <li class="nav__list--item">
+              <a href="#" class="nav__list--item-link">Statistika</a>
+            </li>
+            <li class="nav__list--item">
+              <a href="#" id="open" class="nav__list--item-link btn">Kirish</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <main>
+      <!-- intro section start -->
+      <section id="intro">
+        <div class="container">
+          <div class="wrapper">
+            <div class="left">
+              <h1>
+                Magistratura uchun
+                <span>Qabul 2023</span>
+              </h1>
+              <p>
+                Oliy ta'lim muassasalarining magistraturasiga kirish
+                imtihonlarida
+                <br />
+                ishtirok etish uchun onlayn ariza topshirish tizimi
+              </p>
+
+              <button>
+                <span>Ariza topshirish</span>
+                <i class="bx bx-arrow-back"></i>
+              </button>
+            </div>
+
+            <img src="./Images/Lola.png" alt="Student" />
+
+            <div class="right"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section end -->
+
+      <section id="next">
+        <div class="container">
+          <img src="https://picsum.photos/id/112/300/300" alt="rasm" /><img
+            src="https://picsum.photos/id/122/300/300"
+            alt="rasm"
+          /><img src="https://picsum.photos/id/132/300/300" alt="rasm" /><img
+            src="https://picsum.photos/id/142/300/300"
+            alt="rasm"
+          /><img src="https://picsum.photos/id/152/300/300" alt="rasm" /><img
+            src="https://picsum.photos/id/162/300/300"
+            alt="rasm"
+          /><img src="https://picsum.photos/id/172/300/300" alt="rasm" /><img
+            src="https://picsum.photos/id/182/300/300"
+            alt="rasm"
+          /><img src="https://picsum.photos/id/192/300/300" alt="rasm" /><img
+            src="https://picsum.photos/id/1102/300/300"
+            alt="rasm"
+          /><img src="https://picsum.photos/id/1112/300/300" alt="rasm" /><img
+            src="https://picsum.photos/id/1122/300/300"
+            alt="rasm"
+          />
+        </div>
+      </section>
+    </main>
+
+
+  </body>
+
+  <script>
+    var openBtn = document.getElementById("open");
+    var closeBtn = document.getElementById("close");
+    var modal = document.getElementById("modal");
+
+    openBtn.onclick = function () {
+      modal.style.display = "flex";
+    };
+
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    };
+  </script>
+  
+</html>
