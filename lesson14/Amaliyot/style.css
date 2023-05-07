@@ -1,0 +1,79 @@
+:root {
+    --gren-color: #46A358;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faj {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+}
+
+.nav-items {
+    gap: 50px;
+}
+
+.item {
+    padding: 33px 0 25px 0;
+    cursor: pointer;
+}
+
+.item:hover{
+    border-bottom: 3px solid #46A358;
+    transition: all 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.nav-actions {
+    gap: 35px;
+}
+
+.nav-actions>button {
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 6px;
+    background-color: var(--gren-color);
+    border: none;
+    cursor: pointer;
+}
+
+.nav-actions>button p {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
