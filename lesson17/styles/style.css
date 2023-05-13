@@ -1,4 +1,6 @@
-*::after, *::before, *{
+*::after,
+*::before,
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,72 +8,458 @@
     font-family: 'Kanit', sans-serif;
 }
 
-.container{
+.container {
     max-width: 1240px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-ul, li, a{
+ul,
+li,
+a {
     text-decoration: none;
     list-style-type: none;
 }
 
-header{
+.image{
+    display: none;
+}
+
+header {
     width: 100%;
 }
 
-.nav{
+.nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     min-height: 50px;
 }
 
-.nav .list{
+.nav .list {
     display: flex;
     column-gap: 15px;
 }
 
-.nav .list .item:nth-child(5){
+.nav .list .item:nth-child(5) {
     margin-left: 40px;
 }
 
-.nav .list .item .limk{
+.nav .list .item .link {
     color: #000000;
 }
 
-.nav .logo{
+.nav .logo {
     display: flex;
     align-items: center;
     column-gap: 15px;
     font-size: 18px;
-    color: #FA793C; 
+    color: #FA793C;
 }
 
-.intro{
+.intro {
     min-height: 550px;
     background-image: url(..//assets/images/main.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.intro .wrapper{
+.intro .wrapper {
     display: flex;
+    justify-content: space-between;
 }
 
-.intro .wrapper .left{
+.intro .wrapper .left {
     max-width: 576px;
 }
 
-.intro .wrapper .left h1{
+.intro .wrapper .left h1 {
     color: #fff;
     font-size: 50px;
     font-weight: 400;
     margin-bottom: 21px;
 }
 
-.intro .wrapper .left P{
+.intro .wrapper .left P {
+    color: #fff;
+    padding: 21px;
+}
+
+.intro .wrapper .left h2 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+    padding-left: 21px;
+    padding-top: 24px;
+    margin-bottom: 11px;
+}
+
+.intro .wrapper .left .submit form {
+    padding-left: 21px;
+}
+
+.intro .wrapper .left .submit input {
+    border: 3px solid #FFFFFF;
+    border-radius: 30px;
+    width: 348px;
+    max-height: 50px;
+    background-color: hsl(0, 0%, 100%, 0%);
+    padding: 15px;
     color: #fff;
 }
 
+.intro .wrapper .left .submit input::placeholder {
+    color: #ffffffb0;
+    padding: 25px;
+}
+
+.intro .wrapper .left .submit button {
+    width: 164px;
+    height: 50px;
+    background: #FA793C;
+    border: 3px solid #FFFFFF;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-left: 32px;
+}
+
+.intro .wrapper .left .submit button:hover {
+    background-color: #eb672a;
+    box-shadow: 0 0 35px #e3330c;
+}
+
+.right .card {
+    width: 440px;
+    height: 355px;
+    background-color: #fff;
+    margin-top: 72px;
+    padding: 27px 41px 33px 38px;
+}
+
+.right .card .card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right .card .card-header span {
+    display: flex;
+    cursor: pointer;
+    gap: 23px;
+}
+
+.right .card .card-header span img:nth-child(1):hover {
+    background-color: rgba(128, 128, 128, 0.773);
+    box-shadow: 0 0 35px rgba(128, 128, 128, 0.399);
+    border-radius: 25%;
+}
+
+.right .card .card-header span img:nth-child(2):hover {
+    background-color: rgba(233, 176, 106, 0.773);
+    box-shadow: 0 0 35px rgba(219, 148, 107, 0.399);
+    border-radius: 25%;
+}
+
+.right .card hr {
+    margin-bottom: 17px;
+
+}
+
+.right .card .card-header h2 {
+    font-weight: 600;
+    font-size: 30px;
+    color: #000000;
+}
+
+.right .card .card-body h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #FA793C;
+    margin-bottom: 8px;
+}
+
+.right .card .card-body p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.discovery {
+    padding-top: 33px;
+}
+
+.discovery h2 {
+    font-weight: 500;
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 34px;
+}
+
+.discovery_item {
+    display: flex;
+    gap: 30px;
+}
+
+.discovery_item-div {
+    border: 1px solid #000000;
+}
+
+.discovery_item-div p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+
+.discovery_item-div div {
+    padding: 18px 20px 43px 21px;
+}
+
+.discovery_item-div div h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 4px;
+}
+
+.discovery_item-div div p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+
+.photgraph {
+    padding-top: 52px;
+    margin-bottom: 71px;
+}
+
+.photgraph h2 {
+    font-weight: 500;
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 34px;
+}
+
+.photgraph_item {
+    display: flex;
+    height: 886px;
+    gap: 20px;
+}
+
+.photgraph_item-div {
+    width: 780px;
+    height: 400px;
+
+}
+
+.photgraph_item .photgraph_item-div {
+    padding: 232px 36px 0 36px;
+}
+
+.photgraph_item .photgraph_item-div h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.photgraph_item .photgraph_item-div p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.photgraph_item-div:nth-child(1) {
+    background-image: url(../assets/images/photograph\ 1.png);
+    margin-bottom: 86px;
+}
+
+.photgraph_item-div:nth-child(2) {
+    background-image: url(../assets/images/photograph\ 2.png);
+    margin-bottom: 86px;
+}
+
+.photograph_right .discovery_item-div {
+    margin-bottom: 23px;
+    border: 1px solid #000000;
+    width: 380;
+    height: 280px;
+}
+
+.photograph_right .discovery_item-div img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 100px;
+    background-color: #000000;
+    gap: 15px;
+}
+
+footer p {
+    font-family: 'Pridi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 834px) {
+    .image{
+        display: none;
+    }
+    .container {
+        max-width: 834px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .intro .wrapper {
+        display: block;
+        /* width: 100%; */
+    }
+
+    .intro .wrapper .left {
+        /* width: 100%;
+        background-image: url(../assets/images/main.png); */
+        padding: 31px 51px 46px 135px;
+    }
+
+    .intro .wrapper .submit {
+        display: flex;
+        width: 740px;
+    }
+
+
+    .intro .right .card {
+        width: 100%;
+        height: 200px;
+        margin: 0 0;
+        padding: 0 0px;
+        padding-left: 10px;
+    }
+
+    .intro .right .card .card-body {
+        display: flex;
+        align-items: center;
+        gap: 42px;
+        padding-left: 10px;
+    }
+
+    .discovery{
+        overflow-x: scroll;
+    }
+    .photgraph{
+        margin-bottom: 400px;
+    }
+
+    .photgraph_item {
+        display: block;
+        height: 886px;
+
+    }
+
+    .photograph_right{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 480px){
+    header .nav .list li{
+        display: none;
+    }
+
+    .container {
+        max-width:480px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .image{
+        display: flex;
+    }
+
+    .intro {
+        margin-bottom: 53px;
+    
+    }
+
+    .intro .wrapper {
+        display: block;
+    }
+
+    .intro .wrapper .left {
+        padding: 31px 51px 46px 15px;
+    }
+
+    .intro .wrapper .submit {
+        display: flex;
+        padding-top: 24px;
+        width: 100%;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .intro .wrapper .submit input{
+        margin-bottom: 24px;
+        padding-left: 150px;
+    }
+
+    .intro .right .card {
+        width: 100%;
+        height: 200px;
+        margin: 0 0;
+        padding: 0 0px;
+        padding-left: 10px;
+    }
+
+    .intro .right .card .card-body {
+        display: block;
+        padding-left: 10px;
+        padding-top: 11px;
+    }
+
+    .discovery .discovery_item{
+        display: block;
+    }
+
+    .photgraph{
+        margin-bottom: 470px;
+    }
+
+    .photograph_right{
+        overflow-y: scroll;
+    }
+
+    .photgraph_item .photgraph_item-div {
+        width: 100%;
+        padding: 232px 6px 0 6px;
+        overflow: scroll;
+    }
+
+    .discovery_item-div div{
+        width: 350px;
+        height: 119px;
+    }
+
+
+    
+
+}

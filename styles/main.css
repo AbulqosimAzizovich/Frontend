@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .button {
+  margin-top: 20px;
+  width: 120px;
+  height: 50px;
+  padding-top: 20px;
+  text-align: center;
+  background-color: rgb(90, 139, 17);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  width: 100%;
+  background-color: seagreen;
+}
+header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+header .nav__brand {
+  text-decoration: none;
+  color: #fff;
+}
+header .nav__list {
+  display: flex;
+  column-gap: 5rem;
+}
+header .nav__list--item {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+header .nav__list--item-link {
+  text-decoration: none;
+  color: #fff;
+}
+header .nav__list--item-link:hover {
+  color: rgb(231, 230, 230);
+}
+
+main .button_a {
+  text-decoration: none;
+  color: rgb(53, 6, 6);
+}
+main .button:hover {
+  box-shadow: 0 0 15px greenyellow;
+}
+
+.hero {
+  background-image: url(./main.scss);
+}/*# sourceMappingURL=main.css.map */
