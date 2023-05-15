@@ -1,0 +1,6 @@
+#contact{ 
+    // background-color: coral;
+    background-image: url("https://picsum.photos/id/194/1800/1200");
+    @extend %cover-image;
+    @extend %center;
+}
